@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển trên form</title>
+</head>
+<body>
+    <h1 align ="center" style="color: brown;">Đăng nhập</h1>
+    <form id="web"></form>
+    <table align="center" border="1" style="border-color: brown;background-color:aqua;" cellspacing="0">
+        <tr>
+           <td>Mã người dùng</td>
+           <td><input type="text" id="trungduc" name="txtid"></td> 
+        </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td><input type="password" id="123" name="txtpass"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><input type="button" id="ad" value="Đồng ý" onclick=ocl()></td>
+        </tr>
+        <tr>
+            <td colspan="2"> 
+                <div id="abc" align="center"></div>
+        </td>
+        </tr>
+        <script>function ocl()
+                {document.getElementById("abc").innerText=document.getElementById("trungduc").value}
+                </script>
+    </table> 
+</body>
+</html>
